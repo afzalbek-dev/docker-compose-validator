@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docker-compose-validator"
+version = "1.0.0"
+description = "Fast security and reliability linter for Docker Compose files"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pyyaml>=6.0"
+]
+license = {text = "MIT"}
+authors = [{name = "Afzalbek", email = "afzalbek-dev@users.noreply.github.com"}]
+
+[project.scripts]
+compose-validator = "compose_validator.cli:main"
